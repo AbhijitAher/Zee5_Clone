@@ -1,0 +1,23 @@
+{
+  "name": "zee5_clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:build": "tailwind build ./public/css/style.css -o ./public/css/tailwind.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhijitAher/Zee5_Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhijitAher/Zee5_Clone/issues"
+  },
+  "homepage": "https://github.com/AbhijitAher/Zee5_Clone#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
