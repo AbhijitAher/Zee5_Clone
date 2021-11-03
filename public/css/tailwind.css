@@ -58,12 +58,7 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 
 body {
   font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
+		'Noto Sans',
 		sans-serif,
 		'Apple Color Emoji',
 		'Segoe UI Emoji';
@@ -373,7 +368,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Noto Sans', sans-serif;
   /* 1 */
   line-height: 1.5;
   /* 2 */
@@ -22373,7 +22368,7 @@ video {
 }
 
 .font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .font-mono {
@@ -53952,7 +53947,7 @@ video {
   }
 
   .sm\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: 'Noto Sans', sans-serif;
   }
 
   .sm\:font-mono {
