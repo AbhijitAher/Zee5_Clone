@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/tailwind.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/css/splide.min.css">
+    
 </head>
 
 <script type="module">
@@ -19,13 +21,61 @@
     console.log('bdy:', bdy);
 </script>
 
-<body>
-    <div id="nav" class="sticky top-0 "> 
+<body class="bg-black text-white">
+    <div id="nav" class="sticky top-0 z-100"> 
         <!-- Nav Bar Div -->
+    
+
     </div>
+    <h1 class="">Heloo</h1>
+    
+    <div class="z-0">
+        <div class="splide">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="./images/home_page/top_carousel/1170x658withlog_1162662280.jpeg" alt=""></li>
+                      <li class="splide__slide"><img src="./images/home_page/top_carousel/1170x658withlog_1951194930.jpeg" alt=""></li>
+                      <li class="splide__slide"><img src="./images/home_page/top_carousel/1170x658withlogo25339c876b364fb79132eeb2a6fb713d.jpeg" alt=""></li>
+                      <li class="splide__slide"><img src="./images/home_page/top_carousel/1170x658withlogo_307928927.jpeg" alt=""></li>
+                      <li class="splide__slide"><img src="./images/home_page/top_carousel/1170x658withlogo_975110809.jpeg" alt=""></li>
+                      <li class="splide__slide"><img src="./images/home_page/top_carousel/1170x658withlogoac9b4a5eb515441f94f821f0c1c2d01a.jpeg" alt=""></li>
+                  </ul>
+            </div> 
+            <div class="splide__arrows  h-full bg-transparent m-0">
+                <button class="splide__arrow splide__arrow--prev">
+                    <span class="material-icons h-96 w-40px m-0 bg-opacity-50 bg-black p-16">
+                        arrow_back_ios
+                    </span>
+                </button>
+                <button class="splide__arrow splide__arrow--next m-0">
+                    <span class="material-icons h-96 w-40px m-0 bg-opacity-50 bg-black p-16">
+                        arrow_forward_ios
+                    </span>
+                </button>
+            </div>
+            <div class="splide__progress">
+                <div class="splide__progress__bar">
+                </div>
+            </div>
+          </div>
+    </div>
+    
+
+      <div class="splide">
+        
 
     <h1 class="">Heloo</h1>
     <h1 class="m-20">Heloo</h1>
+    <!-- <a class="px-3" href="#">
+        <span class="material-icons p-1">
+            translate
+        </span>
+    </a> -->
+
+</div>
+<img src="./images/home_page/top_movies/top_movie (1).jpeg" alt="">
+<div>
+
     <h1 class="m-20">Heloo</h1>
     <h1 class="m-20">Heloo</h1>
     <h1 class="m-20">Heloo</h1>
@@ -48,6 +98,39 @@
     
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/js/splide.min.js"></script>
+<!-- <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );
+  </script> -->
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide', {
+            type: 'loop',
+            autoplay: true,
+            interval: number = 2000,
+            speed: number = 1000,
+            pauseOnHover: boolean = true,
+
+            // focus: 'center',
+            // width: '40%',
+            // fixedWidth: '90%',
+            // fixedHeight: '300px',
+            padding: '10rem',
+            gap: '4rem',
+            // margin: '10px',
+            drag: true,
+
+            // pauseOnFocus: true,
+        } );
+
+    splide.mount();
+    // new Splide( '.splide' ).mount();
+    });
+</script>
 
 
 
