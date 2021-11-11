@@ -9,21 +9,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/tailwind.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
+<script type="module">
+    import navbar from './components/navbar.js' 
+    var bdy = document.getElementById('nav')
+    bdy.innerHTML = navbar();
+    console.log('bdy:', bdy);
+</script>
+
 <body>
-    <h1>Home</h1>
+    <div id="nav" class="sticky top-0 "> 
+        <!-- Nav Bar Div -->
+    </div>
+
+    <h1 class="">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+    <h1 class="m-20">Heloo</h1>
+
+
     
+        <!-- <button class="ml-5 bg-purple-500 text-xs text-white font-bold transition duration-500 hover:bg-purple-800 py-2 px-3 rounded inline-flex items-center"> 
+            <img class="w-5 mr-1" src="./images/crown.png"  alt=""/>
+            <span>BUY PLAN</span>
+        </button> -->
+
+    <!-- <div>
+        <p class="bg-red-800"><img src="./images/crown.png" alt=""><span></span></p>
+    </div> -->
+
     
 </body>
 </html>
 
-<script type="module">
-    import navbar from './components/navbar.js' 
-    var bdy = document.getElementsByTagName('body')
-    bdy[0].innerHTML = navbar();
-    // console.log('bdy:', bdy);
-</script>
+
 
 
