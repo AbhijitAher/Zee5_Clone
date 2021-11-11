@@ -1,5 +1,5 @@
 function navbar(){
-    return `<nav class="bg-black sticky top-0 text-white h-20 flex z-70">
+    return `<nav class="bg-black sticky top-0 text-white h-20 flex">
     <div class="container inline-flex mr-10 pl-7 items-center w-10/12">
         <a class="w-12 h-12 mx-4" href="index.html">
             <img src="./images/ZEE5_logo.svg" alt="">
