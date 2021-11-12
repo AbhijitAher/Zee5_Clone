@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay2_Part</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    
+    <style>
+        * {
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #main {
+            width: 320px;
+            margin: 8% auto;
+            box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+        }
+        
+        #head {
+            color: white;
+            display: grid;
+            grid-template-columns: 30% 60%;
+            gap: 3%;
+            padding: 5% 5%;
+        }
+        #language {
+            color: white;
+            padding: 10px 15px;
+        }
+        #card_option {
+            color: #757575;
+            line-height: 35px;
+            font-size: 25px;
+            text-align: center;
+            padding: 10px;
+        }
+        #new_card_box {
+            padding: 15px;
+        }
+        #card_data {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: 65% 30%;
+            gap: 3%;
+        }
+        input {
+            margin: 10px 0px;
+            padding: 5px 0px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        #pay_part {
+            text-align: center;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        #logo {
+            background-color: white;
+            border-radius: 5px;
+            padding: 6px;
+        }
+        #remember {
+            padding: 15px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        h5, h2, h4 {
+            font-weight: 400;
+        }
+        #cancel {
+            float: right;
+            color: white;
+            border: none;
+            background-color: transparent;
+            padding: 0px;
+        }
+        #money {
+            font-weight: 400;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="rounded">
+        <div id="content" class="rounded">
+            <div id="head" class="bg-gray-800 rounded-t">
+                <div id="heading">
+                    <div id="money">₹499</div>
+                </div>
+            </div>
+            <div id="card_option">
+                <h5>Card Detail</h5>
+            </div>
+            <div id="new_card_box">
+                <div id="card_data">
+                    <input type="number" id = "cardNumber" placeholder="Card Number"/>
+                    <input type="text" id = "exp" placeholder="MM/YY"/>
+                    <input type="text"  id = "cardName" placeholder="Card Holder's name"/>
+                    <input type="password" maxlength="3" id = "cvv" placeholder="CVV"/>
+                </div>
+            </div>
+            <div id="remember">
+                <input type="checkbox"/>
+                <label>Remember Card</label>
+            </div>
+            <div id="pay_part" class="bg-gray-800 rounded-b">
+                <p id="payment" onclick="validate()">PAY</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    function validate(){
+        var cName = document.getElementById('cardNumber').value;
+        var expiry = document.getElementById('exp').value;
+        var card_name = document.getElementById('cardName').value;
+        var cvvNumber = document.getElementById('cvv').value;
+
+        var obj = {};
+        
+
+        if(cName == '' || cName.length != 16){
+            alert("Card Number invalid!");
+        }else{
+            obj.c_no = cName;
+        }
+
+        if(expiry == ''){
+            alert("Please enter all the fields");
+        }else{
+            obj.Expire= expiry;
+        }
+
+        if(card_name == ''){
+            alert("Please Enter Card Holders Name");
+        }else{
+            obj.name = card_name;
+        }
+
+        if(cvvNumber == '' || cvvNumber.length < 3){
+            alert("Enter a valid cvv Number");
+        }else{
+            obj.cvv = cvvNumber;
+        }
+        
+        console.log('obj:', obj);
+        
+        if (Object.values(obj).length == 4){
+            
+            setTimeout(function(){
+                alert('Payment Successful, Thank You form Zee5!');
+                window.location.href = "index.html";
+            }, 5000);
+        }
+    }
+        
+</script>

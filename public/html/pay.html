@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay1_Part</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="../css/tailwind.css" />
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        #main {
+            width: 35%;
+            margin: auto;
+            margin-top: 12%;
+            padding: 3%;
+            box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+        }
+        #box {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            gap: 4%;
+            padding: 5px;
+        }
+        #box > div {
+            border: 1px solid gray;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 10px 0px 10px 0px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 25px;
+            background-color: transparent;
+            cursor: pointer;
+            transition-property: background-color, box-shadow, border;
+            transition-duration: 250ms, 250ms, 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0ms, 0ms, 0ms;
+            
+
+        }
+        h4{
+            font-weight: 500;
+            line-height: 32px;
+            font-size: 20px;
+            color: white;
+        }
+        span{
+            padding-top: 0px;
+        }
+    </style>
+</head>
+<body class="bg-white text-white">
+    <div id="main" class="bg-black text-white">
+        <h4>Pay Via</h4>
+        <div id="box">
+           <div class="card"><span class="material-icons align-bottom mr-2">
+            credit_card</span>CREDIT CARD</div>
+           <div class="card" id="debit_card"><span class="material-icons align-bottom mr-2">
+            credit_card</span>DEBIT CARD</div>
+           <div class="card">NETBANKING</div>
+           <div class="card">PAYTM</div> 
+           <div class="card">UPI</div>
+           <div class="card">EMI(CREDIT CARD)</div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("debit_card").addEventListener("click", function(){
+        location.href='pay2.html';
+    });
+
+</script>

@@ -4,26 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZEE5 - Watch TV Shows, 100+ Originals, Movies, News & Live TV Online</title>
+    <title>Login to ZEE5 & watch the Best Shows, Movies, News and More</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/tailwind.css" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Home</h1>
+<body class="bg-black text-white antialiased ">
+
+    <!-- Navbar -->
+    <div id="nav" class="sticky top-0 z-10"> 
+        <!-- Nav Bar Div -->
+    </div>
+
+    <div class="container text-left justify-center ml-60">
+        <p class="text-bold text-s">Step 1 of 3</p>
+        <h1 class="text-bold text-xl my-2">Unlock ZEE5</h1>
+    </div>
+    <div class="grid grid-cols-2 bg-white mx-auto text-left text-black w-8/12 justify-center rounded">
+        <div>
+            <span class="bg-pink-400 ml-6 w-4 h-6 float-left rounded-b-lg"></span>
+
+            <div class="container bg-gray-200 text-left w-full text-black justify-center p-6 pt-8 rounded">
+                
+                <p class="font-bold mb-5 text-2xl">
+                Buy Premium Now!</p>
+                <h4 class="text-l m-3 py-2"> 
+                    <span class="material-icons align-bottom mr-2 text-pink-400">
+                    done
+                    </span>2800+ Blockbuster Movies</h4>
+                <h4 class="text-l m-3 py-2"><span class="material-icons align-bottom mr-2 text-pink-400">
+                    done
+                    </span>150+ Web Series</h4>
+                <h4 class="text-l m-3 py-2"><span class="material-icons align-bottom mr-2 text-pink-400">
+                    done
+                    </span>Watch Before TV</h4>
+                <h4 class="text-l m-3 py-2"><span class="material-icons align-bottom mr-2 text-pink-400">
+                    done
+                    </span>Check Offers</h4>
+                <h4 class="text-l m-3 py-2"><span class="material-icons align-bottom mr-2 text-pink-400">
+                    done
+                    </span>Live TV, Ad-Free entertainment</h4>
+            </div>
+        </div>
+        <div class="container bg-white mx-auto text-center text-black w-full justify-center p-6 pt-16 border-dashed border-l border-gray-400 rounded-r-2xl">
+            <div class="w-full mb-0 bg-pink-200 text-left border-dashed border border-pink-300 rounded-t-lg p-3">
+                <h2 class="align-top float-right font-bold mb-2 text-xl">₹499</h2>
+                <h2 class="float-right mt-1 mr-1 text-sm line-through align-bottom"> ₹999 </h2>
+                
+                    <h4 class="font-bold mb-2 text-sm">12 Months plan</h4>
+                    
+                    <p class="font text-xs">Effective price ₹42/month</p>
+                    
     
+            </div>
+            
+            <div class="w-full mb-0 text-sm bg-gray-100 text-left rounded-b p-1">
+                <p>
+                    <span class="material-icons align-bottom">
+                        ondemand_video
+                    </span>
+                    Watch on 3 screens at the same time</p>
+            </div>
+            <p class="font text-sm py-5">Have a code?</p>
+
+            <a href="account_info.html"><button class="w-full p-3 text-center bg-purple-500 text-sm text-white transition duration-500 hover:bg-purple-800 rounded"> 
+                <span>Continue</span>
+            </button>
+            </a>
+        </div>
+        
+    </div>
+
     
 </body>
 </html>
 
 <script type="module">
-    import navbar from './components/navbar.js' 
-    var bdy = document.getElementsByTagName('body')
-    bdy[0].innerHTML = navbar();
-    // console.log('bdy:', bdy);
+    import navbar from './components/sub_navbar.js' 
+    var bdy = document.getElementById('nav')
+    bdy.innerHTML = navbar();
+    console.log('bdy:', bdy);
 </script>
 
 
