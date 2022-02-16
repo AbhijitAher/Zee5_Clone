@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to ZEE5 & watch the Best Shows, Movies, News and More</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../css/tailwind.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-black text-white antialiased ">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login to ZEE5 & watch the Best Shows, Movies, News and More</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../css/tailwind.css" />
+		<link
+			rel="icon"
+			href="https://www.zee5.com/images/favicon.ico?ver=2.50.92"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="bg-black text-white antialiased">
+		<!-- Navbar -->
+		<div id="nav" class="sticky top-0 z-10">
+			<!-- Nav Bar Div -->
+		</div>
 
-    <!-- Navbar -->
-    <div id="nav" class="sticky top-0 z-10"> 
-        <!-- Nav Bar Div -->
-    </div>
+		<div class="container text-left mx-auto justify-center w-4/12">
+			<p class="text-bold text-s">Step 2 of 3</p>
+			<h1 class="text-bold text-2xl my-2">Account Info</h1>
+		</div>
+		<div
+			class="bg-white mx-auto text-left text-black w-4/12 justify-center rounded p-8"
+		>
+			<h4 class="font-bold text-xl">Continue with Email or Mobile</h4>
 
-    <div class="container text-left mx-auto justify-center w-4/12">
-        <p class="text-bold text-s">Step 2 of 3</p>
-        <h1 class="text-bold text-2xl my-2">Account Info</h1>
-    </div>
-    <div class="bg-white mx-auto text-left text-black w-4/12 justify-center rounded p-8">
-        
-        <h4 class="font-bold text-xl">Continue with Email or Mobile</h4>
+			<input
+				type="text"
+				class="border border-gray-300 w-full rounded p-3 text-sm my-7"
+				placeholder="Email ID Or Mobile Number"
+			/>
 
-        <input type="text" class="border border-gray-300 w-full rounded p-3 text-sm my-7" placeholder="Email ID Or Mobile Number">
+			<input
+				type="password"
+				class="border border-gray-300 w-full rounded p-3 text-sm mb-7"
+				placeholder="Enter your Password"
+			/>
 
-        <input type="password" class="border border-gray-300 w-full rounded p-3 text-sm mb-7" placeholder="Enter your Password">
-        
-        <a href="pay.html"><button class="w-full p-3 text-center bg-purple-500 text-sm text-white transition duration-500 hover:bg-purple-800 rounded"> 
-            <span>Continue</span>
-        </button>
-        </a>
-        
-        <p class="w-5/6 p-4 mx-auto text-lg text-gray-400 text-center mt-7">OR</p>
+			<a href="pay.html"
+				><button
+					class="w-full p-3 text-center bg-purple-500 text-sm text-white transition duration-500 hover:bg-purple-800 rounded"
+				>
+					<span>Continue</span>
+				</button>
+			</a>
 
-        <div class="flex gap-6 justify-center mt-7">
-            <img src="./images/google-social-icon-circle.svg" class="shadow-lg" alt="">
-            <img src="./images/fb-social-icon-circle.svg" alt="">
-            <img src="./images/twitter-social-icon.svg" alt="">
-        </div>
+			<p class="w-5/6 p-4 mx-auto text-lg text-gray-400 text-center mt-7">OR</p>
 
-        <p class="w-5/6 p-4 mx-auto text-xs text-gray-400 text-center mt-7">By proceeding you agree to our <a href="" class="text-purple-400 text-xs"> Terms of Services </a> & <a href="" class="text-purple-400 text-xs"> Privacy Policy </a>. </p>
-    </div>
+			<div class="flex gap-6 justify-center mt-7">
+				<img
+					src="./images/google-social-icon-circle.svg"
+					class="shadow-lg"
+					alt=""
+				/>
+				<img src="./images/fb-social-icon-circle.svg" alt="" />
+				<img src="./images/twitter-social-icon.svg" alt="" />
+			</div>
 
-    
-</body>
+			<p class="w-5/6 p-4 mx-auto text-xs text-gray-400 text-center mt-7">
+				By proceeding you agree to our
+				<a href="" class="text-purple-400 text-xs"> Terms of Services </a> &
+				<a href="" class="text-purple-400 text-xs"> Privacy Policy </a>.
+			</p>
+		</div>
+	</body>
 </html>
 
 <script type="module">
-    import navbar from './components/sub_navbar.js' 
-    var bdy = document.getElementById('nav')
-    bdy.innerHTML = navbar();
-    console.log('bdy:', bdy);
+	import navbar from "./components/sub_navbar.js";
+	var bdy = document.getElementById("nav");
+	bdy.innerHTML = navbar();
+	console.log("bdy:", bdy);
 </script>
-
-
